@@ -251,7 +251,13 @@ comprobarIgual(
 
 console.log("\nFormato\n");
 
-comprobarIgual("pasos con punto de miles", [862, 9500, 19117].map(formatearPasos), ["862", "9.500", "19.117"]);
+comprobarIgual("números con punto de miles", [862, 9500, 19117].map(formatearNumero), ["862", "9.500", "19.117"]);
+comprobarIgual("números con coma decimal", [3.2, 13, 0.5, 4.1].map(formatearNumero), ["3,2", "13", "0,5", "4,1"]);
+comprobarIgual(
+    "cantidad en singular o plural",
+    [formatearCantidad(1, "piso", "pisos"), formatearCantidad(0, "piso", "pisos"), formatearCantidad(2, "caminata", "caminatas")],
+    ["1 piso", "0 pisos", "2 caminatas"]
+);
 comprobarIgual("fecha corta", formatearFechaCorta("2025-03-08"), "08/03");
 comprobarIgual("fecha completa", formatearFechaCompleta("2025-03-08"), "08/03/2025");
 comprobarIgual(

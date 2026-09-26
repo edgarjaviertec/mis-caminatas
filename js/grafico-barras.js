@@ -93,7 +93,7 @@ function dibujarGraficoBarras(canvas, dias, indiceSeleccionado, indiceBajoCursor
         contexto.font = "bold 13px " + colores.fuente;
         contexto.textAlign = "center";
         contexto.textBaseline = "bottom";
-        contexto.fillText(formatearPasos(dia.pasos), centroX, yBarra - 4);
+        contexto.fillText(formatearNumero(dia.pasos), centroX, yBarra - 4);
 
         // Pisos y distancia dentro de la barra, si cabe
         if (altoBarra > ALTO_MINIMO_PARA_TEXTO_INTERIOR) {
@@ -127,7 +127,7 @@ function dibujarTextoInterior(contexto, dia, xBarra, anchoBarra, baseY, colores)
     dibujarEscalera(contexto, xInicio + anchoTexto + separacion, yFila, colores.textoSobreBarra);
 
     contexto.textAlign = "center";
-    contexto.fillText(dia.distanciaKm + "km", xBarra + anchoBarra / 2, baseY - 12);
+    contexto.fillText(formatearNumero(dia.distanciaKm) + "km", xBarra + anchoBarra / 2, baseY - 12);
 }
 
 // Escalera de 3 escalones que suben hacia la derecha (estilo Pedometer++).

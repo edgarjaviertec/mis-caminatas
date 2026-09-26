@@ -15,11 +15,19 @@
     --color-verde: #30d158;
     --color-rojo: #ff453a;
     --color-azul: #4da6ff;
+    --color-texto-boton: #ffffff;
 
     /* Texto dentro de las barras: siempre oscuro, porque va sobre color. */
     --color-texto-sobre-barra: rgba(20, 20, 20, 0.7);
     --color-columna-seleccionada: rgba(128, 128, 128, 0.08);
     --color-columna-bajo-cursor: rgba(128, 128, 128, 0.04);
+
+    --espacio-pequenio: 8px;
+    --espacio-medio: 16px;
+    --espacio-grande: 32px;
+    --radio-borde: 12px;
+    --ancho-maximo: 820px;
+    --alto-minimo-tactil: 44px;   /* tamaño mínimo cómodo para tocar en el iPhone */
 }
 
 @media (prefers-color-scheme: dark) {
@@ -29,4 +37,276 @@
         --color-texto: #f5f5f7;
         --color-naranja: #ff8c1a;
     }
+}
+
+
+/* ==========================================================================
+   2. GENERICOS
+   Reset básico. Nada de colores ni tamaños propios de la app.
+   ========================================================================== */
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body,
+h1,
+h2,
+p,
+ul {
+    margin: 0;
+}
+
+ul {
+    padding: 0;
+}
+
+
+/* ==========================================================================
+   3. ELEMENTOS
+   Etiquetas HTML sin clases.
+   ========================================================================== */
+
+body {
+    min-height: 100vh;
+    font-family: var(--fuente);
+    font-size: 15px;
+    line-height: 1.4;
+    color: var(--color-texto);
+    background: var(--color-fondo);
+}
+
+button {
+    font: inherit;
+}
+
+
+/* ==========================================================================
+   4. OBJETOS
+   Estructuras de layout reutilizables, sin apariencia.
+   ========================================================================== */
+
+.aplicacion {
+    max-width: var(--ancho-maximo);
+    margin: 0 auto;
+    padding: var(--espacio-medio);
+    /* Respeta la muesca y la barra inferior del iPhone. */
+    padding-left: max(var(--espacio-medio), env(safe-area-inset-left));
+    padding-right: max(var(--espacio-medio), env(safe-area-inset-right));
+    padding-bottom: max(var(--espacio-medio), env(safe-area-inset-bottom));
+}
+
+
+/* ==========================================================================
+   5. COMPONENTES
+   Piezas visibles de la app. Un subtítulo por componente.
+   ========================================================================== */
+
+/* --- Pantalla de inicio --- */
+
+.pantalla-inicio {
+    display: flex;
+    flex-direction: column;
+    gap: var(--espacio-medio);
+    min-height: calc(100vh - 2 * var(--espacio-medio));
+}
+
+.titulo-aplicacion {
+    font-size: 28px;
+    color: var(--color-naranja);
+}
+
+/* --- Zona de arrastre --- */
+
+.zona-arrastre {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: var(--espacio-medio);
+    padding: var(--espacio-grande) var(--espacio-medio);
+    text-align: center;
+    background: var(--color-superficie);
+    border: 2px dashed var(--color-azul);
+    border-radius: var(--radio-borde);
+}
+
+.zona-arrastre.esta-activa {
+    border-color: var(--color-verde);
+}
+
+.zona-arrastre.tiene-error {
+    border-color: var(--color-rojo);
+}
+
+.zona-arrastre-mensaje {
+    font-size: 17px;
+    font-weight: bold;
+    white-space: pre-line;   /* los mensajes de error traen saltos de línea */
+}
+
+.zona-arrastre.tiene-error .zona-arrastre-mensaje {
+    color: var(--color-rojo);
+}
+
+.zona-arrastre-ayuda {
+    font-size: 13px;
+    color: var(--color-texto-tenue);
+}
+
+/* --- Botones --- */
+
+.boton {
+    display: inline-flex;
+    align-items: center;
+    min-height: var(--alto-minimo-tactil);
+    padding: 0 var(--espacio-grande);
+    font-weight: bold;
+    color: var(--color-texto-boton);
+    background: var(--color-naranja);
+    border-radius: var(--radio-borde);
+    cursor: pointer;
+}
+
+.boton-volver {
+    min-height: var(--alto-minimo-tactil);
+    padding: 0;
+    color: var(--color-naranja);
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+/* --- Resumen del día --- */
+
+.resumen-dia {
+    text-align: center;
+    color: var(--color-naranja);
+}
+
+.resumen-dia-pasos {
+    font-size: 44px;
+    font-weight: bold;
+    line-height: 1.1;
+}
+
+.resumen-dia-calorias {
+    font-size: 17px;
+    font-weight: 600;
+}
+
+.resumen-dia-detalle {
+    font-size: 13px;
+    color: var(--color-texto-tenue);
+}
+
+/* --- Gráfico --- */
+
+.contenedor-grafico {
+    margin: var(--espacio-medio) 0;
+    overflow-x: auto;
+}
+
+.grafico-pasos {
+    display: block;
+    cursor: pointer;
+}
+
+/* --- Línea de tiempo --- */
+
+.titulo-actividad {
+    margin-bottom: var(--espacio-pequenio);
+    font-size: 15px;
+}
+
+.linea-tiempo {
+    list-style: none;
+    padding: var(--espacio-pequenio) var(--espacio-medio);
+    background: var(--color-superficie);
+    border-radius: var(--radio-borde);
+}
+
+.linea-tiempo-fila {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+    column-gap: var(--espacio-medio);
+    padding: 6px 0;
+}
+
+.linea-tiempo-fila.esta-sentado,
+.linea-tiempo-fila.esta-caminando-poco {
+    color: var(--color-texto-tenue);
+}
+
+.linea-tiempo-fila.esta-sentado {
+    font-style: italic;
+}
+
+.linea-tiempo-minutos {
+    font-weight: bold;
+    color: var(--color-naranja);
+}
+
+.linea-tiempo-velocidad {
+    color: var(--color-texto-tenue);
+}
+
+.linea-tiempo-calorias {
+    color: var(--color-naranja);
+}
+
+.linea-tiempo-vacia {
+    padding: 6px 0;
+    font-style: italic;
+    color: var(--color-texto-tenue);
+}
+
+.nivel-recreativo {
+    color: var(--color-texto-tenue);
+}
+
+.nivel-saludable,
+.nivel-optimo {
+    color: var(--color-verde);
+}
+
+.nivel-intenso {
+    color: var(--color-naranja);
+}
+
+/* --- Aviso de métricas faltantes --- */
+
+.aviso {
+    margin-top: var(--espacio-medio);
+    font-size: 12px;
+    text-align: center;
+    color: var(--color-texto-tenue);
+}
+
+/* --- Pantallas anchas --- */
+
+@media (min-width: 700px) {
+    .aplicacion {
+        padding: var(--espacio-grande);
+    }
+
+    .pantalla-inicio {
+        min-height: calc(100vh - 2 * var(--espacio-grande));
+    }
+}
+
+
+/* ==========================================================================
+   6. UTILIDADES
+   Clases de una sola regla. Única capa donde se permite !important.
+   ========================================================================== */
+
+/* El atributo hidden debe ocultar siempre, aunque un componente defina su
+   propio display (por ejemplo .pantalla-inicio con display: flex). */
+[hidden] {
+    display: none !important;
 }

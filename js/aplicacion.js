@@ -99,10 +99,12 @@ function seleccionarDia(indice) {
     estado.indiceSeleccionado = indice;
     const dia = estado.dias[indice];
 
-    elementos.resumenPasos.textContent = formatearPasos(dia.pasos);
-    elementos.resumenCalorias.textContent = "pasos (" + dia.caloriasActivas + " calorías)";
+    elementos.resumenPasos.textContent = formatearNumero(dia.pasos);
+    elementos.resumenCalorias.textContent = "pasos (" + formatearNumero(dia.caloriasActivas) + " calorías)";
     elementos.resumenDetalle.textContent =
-        dia.distanciaKm + " km · " + dia.pisos + " pisos · " + formatearFechaCompleta(dia.fecha);
+        formatearNumero(dia.distanciaKm) + " km · " +
+        formatearCantidad(dia.pisos, "piso", "pisos") + " · " +
+        formatearFechaCompleta(dia.fecha);
 
     mostrarLineaTiempo(dia, elementos.tituloActividad, elementos.lineaTiempo);
     redibujarGrafico();

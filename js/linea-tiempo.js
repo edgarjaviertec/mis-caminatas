@@ -14,7 +14,8 @@ function mostrarLineaTiempo(dia, elementoTitulo, elementoLista) {
         elementoTitulo.append(
             " · ",
             crearIcono("fa-person-walking"),
-            " " + dia.numeroCaminatas + " caminatas · " + dia.minutosCaminata + " min"
+            " " + formatearCantidad(dia.numeroCaminatas, "caminata", "caminatas") +
+            " · " + dia.minutosCaminata + " min"
         );
     }
 
@@ -71,7 +72,7 @@ function crearFilaCaminata(segmento) {
         crearIcono("fa-person-walking"),
         crearElemento("span", "linea-tiempo-hora", horario),
         crearElemento("span", "linea-tiempo-minutos", segmento.minutos + " min"),
-        crearElemento("span", "linea-tiempo-velocidad", segmento.kmh + " km/h"),
+        crearElemento("span", "linea-tiempo-velocidad", formatearNumero(segmento.kmh) + " km/h"),
         calorias,
         etiquetaNivel
     );

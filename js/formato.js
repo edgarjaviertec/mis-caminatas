@@ -1,11 +1,17 @@
 // Formato de números, fechas y horas para mostrar en pantalla.
 
-// "de-DE" usa punto como separador de miles también en números de 4 cifras
-// (9.500); "es-ES" dejaría 9500 sin separar.
-const FORMATO_MILES = new Intl.NumberFormat("de-DE");
+// Punto para los miles y coma para los decimales: 19.117 pasos, 3,2 km.
+// Se usa "de-DE" porque "es-ES" no separa los miles en números de 4 cifras (9500).
+const FORMATO_NUMEROS = new Intl.NumberFormat("de-DE");
 
-function formatearPasos(pasos) {
-    return FORMATO_MILES.format(pasos);
+function formatearNumero(numero) {
+    return FORMATO_NUMEROS.format(numero);
+}
+
+// Número con la palabra en singular o plural: "1 piso", "2 pisos".
+function formatearCantidad(cantidad, singular, plural) {
+    const palabra = cantidad === 1 ? singular : plural;
+    return formatearNumero(cantidad) + " " + palabra;
 }
 
 // "2025-03-08" -> "08/03"
