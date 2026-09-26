@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+    <meta name="color-scheme" content="light dark">
+    <title>Caminatas</title>
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css"
+          integrity="sha512-QeR2VH+lsBE5LSAe1Q5EnTBbe7XTBubt8dG93Y7gidSgdMCr8nVqKcfKAMyN96SV8KDbZVTDXChatu5G2KQGzg=="
+          crossorigin="anonymous" referrerpolicy="no-referrer">
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+    <main class="aplicacion">
+
+        <!-- Pantalla 1: elegir o arrastrar el export -->
+        <section id="pantalla-inicio" class="pantalla-inicio">
+            <h1 class="titulo-aplicacion">Caminatas</h1>
+            <div id="zona-arrastre" class="zona-arrastre">
+                <p id="zona-arrastre-mensaje" class="zona-arrastre-mensaje">
+                    Elige el .zip del export de Simple Health Export CSV
+                </p>
+                <label class="boton">
+                    Elegir archivo
+                    <input id="selector-archivos" type="file" accept=".zip,.csv" multiple hidden>
+                </label>
+                <p class="zona-arrastre-ayuda">
+                    En la computadora también puedes arrastrar aquí el .zip, los archivos .csv o la carpeta del export.
+                </p>
+            </div>
+        </section>
+
+        <!-- Pantalla 2: tablero con el día seleccionado, el gráfico y la actividad -->
+        <section id="pantalla-tablero" class="pantalla-tablero" hidden>
+            <button id="boton-volver" class="boton-volver" type="button">
+                <i class="fa-solid fa-arrow-left" aria-hidden="true"></i> Otro export
+            </button>
+
+            <header class="resumen-dia" aria-live="polite">
+                <p id="resumen-pasos" class="resumen-dia-pasos"></p>
+                <p id="resumen-calorias" class="resumen-dia-calorias"></p>
+                <p id="resumen-detalle" class="resumen-dia-detalle"></p>
+            </header>
+
+            <div id="contenedor-grafico" class="contenedor-grafico">
+                <canvas id="grafico-pasos" class="grafico-pasos" role="img"
+                        aria-label="Pasos por día. Toca una barra para ver ese día."></canvas>
+            </div>
+
+            <h2 id="titulo-actividad" class="titulo-actividad"></h2>
+            <ul id="linea-tiempo" class="linea-tiempo"></ul>
+
+            <p id="aviso-advertencias" class="aviso" hidden></p>
+        </section>
+
+    </main>
+
+    <!-- El orden importa: cada script usa funciones de los anteriores.
+         pruebas/ejecutar-pruebas.js carga los mismos archivos en el mismo orden. -->
+    <script src="https://cdn.jsdelivr.net/npm/fflate@0.8.3/umd/index.js"
+            integrity="sha384-ETfVLWAUsU3zp3SpnQsPDbAyrF6jYv2w8aNYo6KtY2JuyxXhzYLOL7e0ATbLSIHP"
+            crossorigin="anonymous"></script>
+    <script src="js/formato.js"></script>
+    <script src="js/lector-csv.js"></script>
+    <script src="js/procesador-salud.js"></script>
+    <script src="js/lector-archivos.js"></script>
+    <script src="js/grafico-barras.js"></script>
+    <script src="js/linea-tiempo.js"></script>
+    <script src="js/aplicacion.js"></script>
+</body>
+</html>
