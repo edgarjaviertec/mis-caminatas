@@ -1,0 +1,24 @@
+# Configuración de Netlify. El sitio es estático: no hay nada que compilar.
+
+[build]
+    publish = "."
+    # Antes de publicar se corren las pruebas; si alguna falla, Netlify no publica
+    # y queda en línea la versión anterior.
+    command = "node pruebas/ejecutar-pruebas.js"
+
+[build.environment]
+    # Las pruebas usan File, que existe en Node desde la versión 20.
+    NODE_VERSION = "22"
+
+[[headers]]
+    for = "/*"
+    [headers.values]
+        # Solo se permite cargar código y estilos propios y de los dos CDN
+        # (fflate en jsDelivr, Font Awesome en cdnjs).
+        # connect-src 'none': la página no puede enviar datos a ningún servidor,
+        # así los datos de salud nunca salen del navegador.
+        # Va en una sola línea: Netlify une las líneas con comas y eso rompería la política.
+        Content-Security-Policy = "default-src 'self'; script-src 'self' https://cdn.jsdelivr.net; style-src 'self' https://cdnjs.cloudflare.com; font-src https://cdnjs.cloudflare.com; img-src 'self'; manifest-src 'self'; connect-src 'none'; object-src 'none'; base-uri 'none'; form-action 'none'; frame-ancestors 'none'"
+        X-Content-Type-Options = "nosniff"
+        Referrer-Policy = "no-referrer"
+        Permissions-Policy = "camera=(), microphone=(), geolocation=()"
