@@ -1,6 +1,6 @@
 # Caminatas
 
-Web que lee el export de **Simple Health Export CSV** del iPhone y muestra los pasos diarios, las caminatas del día y las calorías quemadas en cada una. Reemplaza a la app de escritorio en Python (`version-python/`), que queda archivada y sirve como referencia para las pruebas.
+Web que lee el export de **Simple Health Export CSV** del iPhone y muestra los pasos diarios, las caminatas del día y las calorías quemadas en cada una. Reemplaza a una app de escritorio en Python que vive en otro repositorio.
 
 Se publica gratis en Netlify como sitio estático. Todo se procesa en el navegador: los datos de salud nunca salen del equipo del usuario.
 
@@ -85,7 +85,6 @@ iconos/
 pruebas/datos/*.csv
 pruebas/datos-referencia.json
 pruebas/ejecutar-pruebas.js
-version-python/
 ```
 
 ## Datos de entrada
@@ -100,7 +99,8 @@ version-python/
 
 - Un solo comando: `node pruebas/ejecutar-pruebas.js`. Node se usa solo para ejecutar las pruebas, sin paquetes.
 - El ejecutor carga los mismos scripts de la app, en el mismo orden que `index.html`.
-- La referencia (`datos-referencia.json`) se genera con la app de `version-python/`.
+- La referencia (`datos-referencia.json`) se generó con la app de Python ya corregida y es el resultado esperado. Si la lógica cambia a propósito, se actualiza a mano junto con el cambio.
+- La referencia usa la zona horaria `America/Cancun` (guardada en el JSON); el ejecutor la fija para que las pruebas den lo mismo en cualquier equipo y en Netlify.
 - Antes de cada commit, todas las pruebas deben pasar. Netlify corre el mismo comando y no publica si alguna falla.
 
 ## Privacidad
