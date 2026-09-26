@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 512 512">
+    <!-- Fondo completo (sin esquinas): iOS y Android recortan la forma del icono. -->
+    <rect width="512" height="512" fill="#c05500"/>
+    <!-- Tres barras que suben, con las proporciones de la escalera del gráfico
+         (45 %, 72 % y 100 %). Todo cabe en el centro para que ningún recorte lo corte. -->
+    <rect x="128" y="269" width="72" height="115" rx="12" fill="#ffffff"/>
+    <rect x="220" y="200" width="72" height="184" rx="12" fill="#ffffff"/>
+    <rect x="312" y="128" width="72" height="256" rx="12" fill="#ffffff"/>
+</svg>

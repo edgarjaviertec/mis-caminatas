@@ -88,6 +88,15 @@ pruebas/datos-referencia.json
 pruebas/ejecutar-pruebas.js
 ```
 
+## Icono de la app
+
+La única fuente es `iconos/icono.svg`. Los PNG (512, 192, 180 y 32 px) se generan desde él en macOS, sin instalar nada:
+
+```
+qlmanage -t -s 512 -o /tmp iconos/icono.svg
+for tamanio in 512 192 180 32; do sips -z $tamanio $tamanio /tmp/icono.svg.png --out iconos/icono-$tamanio.png; done
+```
+
 ## Datos de entrada
 
 - Solo los CSV de Simple Health Export CSV. Entrada principal: el `.zip` del export (CSV en la raíz). También CSV sueltos y, en escritorio, una carpeta arrastrada.
