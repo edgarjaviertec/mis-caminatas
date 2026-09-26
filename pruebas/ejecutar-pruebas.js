@@ -251,8 +251,8 @@ comprobarIgual(
 
 console.log("\nFormato\n");
 
-comprobarIgual("números con punto de miles", [862, 9500, 19117].map(formatearNumero), ["862", "9.500", "19.117"]);
-comprobarIgual("números con coma decimal", [3.2, 13, 0.5, 4.1].map(formatearNumero), ["3,2", "13", "0,5", "4,1"]);
+comprobarIgual("números con coma de miles", [862, 9500, 19117].map(formatearNumero), ["862", "9,500", "19,117"]);
+comprobarIgual("números con punto decimal", [3.2, 13, 0.5, 4.1].map(formatearNumero), ["3.2", "13", "0.5", "4.1"]);
 comprobarIgual(
     "cantidad en singular o plural",
     [formatearCantidad(1, "piso", "pisos"), formatearCantidad(0, "piso", "pisos"), formatearCantidad(2, "caminata", "caminatas")],

@@ -1,8 +1,7 @@
 // Formato de números, fechas y horas para mostrar en pantalla.
 
-// Punto para los miles y coma para los decimales: 19.117 pasos, 3,2 km.
-// Se usa "de-DE" porque "es-ES" no separa los miles en números de 4 cifras (9500).
-const FORMATO_NUMEROS = new Intl.NumberFormat("de-DE");
+// Formato de México: coma para los miles y punto para los decimales (19,117 pasos, 3.2 km).
+const FORMATO_NUMEROS = new Intl.NumberFormat("es-MX");
 
 function formatearNumero(numero) {
     return FORMATO_NUMEROS.format(numero);

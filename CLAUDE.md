@@ -15,6 +15,7 @@ Se publica gratis en Netlify como sitio estático. Todo se procesa en el navegad
 
 - Todo el código en **español estricto**: archivos, carpetas, clases, funciones, variables, constantes, clases CSS e ids HTML.
 - **Sin tildes ni ñ** en código y nombres de archivo (`calorias`, `anio`). El texto visible para el usuario y los comentarios sí las llevan.
+- Números en pantalla con el formato de México (`es-MX`): coma para los miles y punto para los decimales (19,117 pasos, 3.2 km). Siempre con `formatearNumero()`.
 - **Nunca variables de una letra** (`a`, `b`, `d`, `i`…), tampoco en bucles. Nada de abreviaturas inventadas (`tam`, `ini`, `vel`). Abreviaturas permitidas: `km`, `kmh`, `kcal`, `csv`, `zip`, `id`, `url`.
 - Excepciones inevitables: palabras del lenguaje y APIs del navegador, APIs de librerías (`fflate.unzipSync`, clases `fa-*`), columnas del CSV (`startDate`, `value`…), identificadores `HKQuantityTypeIdentifier…` y archivos de nombre fijo (`index.html`, `netlify.toml`, `README.md`, `CLAUDE.md`, `.gitignore`).
 - **Regla de frontera:** lo que viene en inglés desde afuera se traduce en cuanto entra. El lector CSV entrega objetos con claves en español (`inicio`, `fin`, `valor`, `unidad`, `fuente`).
