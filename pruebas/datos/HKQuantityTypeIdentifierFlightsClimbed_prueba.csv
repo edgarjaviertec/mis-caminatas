@@ -1,0 +1,6 @@
+sep=,
+type,sourceName,sourceVersion,productType,device,startDate,endDate,unit,value
+HKQuantityTypeIdentifierFlightsClimbed,iPhone,26.6,"iPhone17,5","<<HKDevice: 0x000000000>, name:iPhone, manufacturer:Apple Inc., model:iPhone, hardware:iPhone17,5, software:26.6, creation date:2025-01-01 00:00:00 +0000>",2025-03-04 02:00:57 +0000,2025-03-04 02:00:59 +0000,count,1.0
+HKQuantityTypeIdentifierFlightsClimbed,iPhone,26.6,"iPhone17,5","<<HKDevice: 0x000000000>, name:iPhone, manufacturer:Apple Inc., model:iPhone, hardware:iPhone17,5, software:26.6, creation date:2025-01-01 00:00:00 +0000>",2025-03-05 01:57:22 +0000,2025-03-05 01:57:25 +0000,count,1.0
+HKQuantityTypeIdentifierFlightsClimbed,iPhone,26.6,"iPhone17,5","<<HKDevice: 0x000000000>, name:iPhone, manufacturer:Apple Inc., model:iPhone, hardware:iPhone17,5, software:26.6, creation date:2025-01-01 00:00:00 +0000>",2025-03-05 06:00:09 +0000,2025-03-05 06:00:17 +0000,count,1.0
+HKQuantityTypeIdentifierFlightsClimbed,iPhone,26.6,"iPhone17,5","<<HKDevice: 0x000000000>, name:iPhone, manufacturer:Apple Inc., model:iPhone, hardware:iPhone17,5, software:26.6, creation date:2025-01-01 00:00:00 +0000>",2025-03-05 06:22:04 +0000,2025-03-05 06:22:06 +0000,count,1.0

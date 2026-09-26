@@ -1,0 +1,6 @@
+.DS_Store
+
+# Datos de salud reales: nunca se suben al repositorio.
+*.zip
+*.csv
+!pruebas/datos/*.csv

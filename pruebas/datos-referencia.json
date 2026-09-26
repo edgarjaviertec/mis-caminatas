@@ -1,0 +1,1253 @@
+{
+    "zonaHoraria": "America/Cancun",
+    "advertencias": [],
+    "dias": [
+        {
+            "fecha": "2025-03-03",
+            "pasos": 19117,
+            "caloriasActivas": 560,
+            "distanciaKm": 13.0,
+            "pisos": 1,
+            "numeroCaminatas": 8,
+            "minutosCaminata": 184,
+            "lineaTiempo": [
+                {
+                    "tipo": "caminata-corta",
+                    "inicio": "2025-03-03T00:13:04",
+                    "fin": "2025-03-03T00:13:09",
+                    "minutos": 0,
+                    "kmh": 2.9,
+                    "nivel": "",
+                    "calorias": 0
+                },
+                {
+                    "tipo": "sentado",
+                    "inicio": "2025-03-03T00:13:09",
+                    "fin": "2025-03-03T00:26:49",
+                    "minutos": 14,
+                    "kmh": 0.0,
+                    "nivel": "",
+                    "calorias": 0
+                },
+                {
+                    "tipo": "caminata",
+                    "inicio": "2025-03-03T00:26:49",
+                    "fin": "2025-03-03T00:31:32",
+                    "minutos": 5,
+                    "kmh": 2.4,
+                    "nivel": "recreativo",
+                    "calorias": 6
+                },
+                {
+                    "tipo": "sentado",
+                    "inicio": "2025-03-03T00:31:32",
+                    "fin": "2025-03-03T00:59:30",
+                    "minutos": 28,
+                    "kmh": 0.0,
+                    "nivel": "",
+                    "calorias": 0
+                },
+                {
+                    "tipo": "caminata-corta",
+                    "inicio": "2025-03-03T00:59:30",
+                    "fin": "2025-03-03T00:59:33",
+                    "minutos": 0,
+                    "kmh": 4.9,
+                    "nivel": "",
+                    "calorias": 0
+                },
+                {
+                    "tipo": "sentado",
+                    "inicio": "2025-03-03T00:59:33",
+                    "fin": "2025-03-03T01:12:45",
+                    "minutos": 13,
+                    "kmh": 0.0,
+                    "nivel": "",
+                    "calorias": 0
+                },
+                {
+                    "tipo": "caminata-corta",
+                    "inicio": "2025-03-03T01:12:45",
+                    "fin": "2025-03-03T01:12:46",
+                    "minutos": 0,
+                    "kmh": 2.6,
+                    "nivel": "",
+                    "calorias": 0
+                },
+                {
+                    "tipo": "caminata-corta",
+                    "inicio": "2025-03-03T04:20:18",
+                    "fin": "2025-03-03T04:20:21",
+                    "minutos": 0,
+                    "kmh": 2.3,
+                    "nivel": "",
+                    "calorias": 0
+                },
+                {
+                    "tipo": "caminata",
+                    "inicio": "2025-03-03T10:08:32",
+                    "fin": "2025-03-03T10:12:37",
+                    "minutos": 4,
+                    "kmh": 2.3,
+                    "nivel": "recreativo",
+                    "calorias": 4
+                },
+                {
+                    "tipo": "sentado",
+                    "inicio": "2025-03-03T10:12:37",
+                    "fin": "2025-03-03T10:20:07",
+                    "minutos": 8,
+                    "kmh": 0.0,
+                    "nivel": "",
+                    "calorias": 0
+                },
+                {
+                    "tipo": "caminata-corta",
+                    "inicio": "2025-03-03T10:20:07",
+                    "fin": "2025-03-03T10:20:12",
+                    "minutos": 0,
+                    "kmh": 2.5,
+                    "nivel": "",
+                    "calorias": 0
+                },
+                {
+                    "tipo": "sentado",
+                    "inicio": "2025-03-03T10:20:12",
+                    "fin": "2025-03-03T11:11:19",
+                    "minutos": 51,
+                    "kmh": 0.0,
+                    "nivel": "",
+                    "calorias": 0
+                },
+                {
+                    "tipo": "caminata",
+                    "inicio": "2025-03-03T11:11:19",
+                    "fin": "2025-03-03T11:19:23",
+                    "minutos": 8,
+                    "kmh": 3.2,
+                    "nivel": "recreativo",
+                    "calorias": 8
+                },
+                {
+                    "tipo": "sentado",
+                    "inicio": "2025-03-03T11:19:23",
+                    "fin": "2025-03-03T11:40:51",
+                    "minutos": 21,
+                    "kmh": 0.0,
+                    "nivel": "",
+                    "calorias": 0
+                },
+                {
+                    "tipo": "caminata-corta",
+                    "inicio": "2025-03-03T11:40:51",
+                    "fin": "2025-03-03T11:43:44",
+                    "minutos": 3,
+                    "kmh": 3.3,
+                    "nivel": "",
+                    "calorias": 0
+                },
+                {
+                    "tipo": "sentado",
+                    "inicio": "2025-03-03T11:43:44",
+                    "fin": "2025-03-03T12:56:22",
+                    "minutos": 73,
+                    "kmh": 0.0,
+                    "nivel": "",
+                    "calorias": 0
+                },
+                {
+                    "tipo": "caminata",
+                    "inicio": "2025-03-03T12:56:22",
+                    "fin": "2025-03-03T14:17:59",
+                    "minutos": 82,
+                    "kmh": 3.5,
+                    "nivel": "saludable",
+                    "calorias": 191
+                },
+                {
+                    "tipo": "sentado",
+                    "inicio": "2025-03-03T14:17:59",
+                    "fin": "2025-03-03T14:40:26",
+                    "minutos": 22,
+                    "kmh": 0.0,
+                    "nivel": "",
+                    "calorias": 0
+                },
+                {
+                    "tipo": "caminata-corta",
+                    "inicio": "2025-03-03T14:40:26",
+                    "fin": "2025-03-03T14:42:14",
+                    "minutos": 2,
+                    "kmh": 3.0,
+                    "nivel": "",
+                    "calorias": 0
+                },
+                {
+                    "tipo": "caminata",
+                    "inicio": "2025-03-03T19:57:23",
+                    "fin": "2025-03-03T20:05:47",
+                    "minutos": 8,
+                    "kmh": 3.5,
+                    "nivel": "saludable",
+                    "calorias": 11
+                },
+                {
+                    "tipo": "sentado",
+                    "inicio": "2025-03-03T20:05:47",
+                    "fin": "2025-03-03T20:12:06",
+                    "minutos": 6,
+                    "kmh": 0.0,
+                    "nivel": "",
+                    "calorias": 0
+                },
+                {
+                    "tipo": "caminata-corta",
+                    "inicio": "2025-03-03T20:12:06",
+                    "fin": "2025-03-03T20:14:29",
+                    "minutos": 2,
+                    "kmh": 4.5,
+                    "nivel": "",
+                    "calorias": 0
+                },
+                {
+                    "tipo": "sentado",
+                    "inicio": "2025-03-03T20:14:29",
+                    "fin": "2025-03-03T20:28:55",
+                    "minutos": 14,
+                    "kmh": 0.0,
+                    "nivel": "",
+                    "calorias": 0
+                },
+                {
+                    "tipo": "caminata",
+                    "inicio": "2025-03-03T20:28:55",
+                    "fin": "2025-03-03T20:42:40",
+                    "minutos": 14,
+                    "kmh": 3.8,
+                    "nivel": "saludable",
+                    "calorias": 21
+                },
+                {
+                    "tipo": "sentado",
+                    "inicio": "2025-03-03T20:42:40",
+                    "fin": "2025-03-03T20:57:07",
+                    "minutos": 14,
+                    "kmh": 0.0,
+                    "nivel": "",
+                    "calorias": 0
+                },
+                {
+                    "tipo": "caminata",
+                    "inicio": "2025-03-03T20:57:07",
+                    "fin": "2025-03-03T21:00:41",
+                    "minutos": 4,
+                    "kmh": 3.5,
+                    "nivel": "saludable",
+                    "calorias": 6
+                },
+                {
+                    "tipo": "sentado",
+                    "inicio": "2025-03-03T21:00:41",
+                    "fin": "2025-03-03T22:01:38",
+                    "minutos": 61,
+                    "kmh": 0.0,
+                    "nivel": "",
+                    "calorias": 0
+                },
+                {
+                    "tipo": "caminata",
+                    "inicio": "2025-03-03T22:01:38",
+                    "fin": "2025-03-03T23:01:01",
+                    "minutos": 59,
+                    "kmh": 4.1,
+                    "nivel": "saludable",
+                    "calorias": 179
+                }
+            ]
+        },
+        {
+            "fecha": "2025-03-04",
+            "pasos": 7730,
+            "caloriasActivas": 223,
+            "distanciaKm": 5.3,
+            "pisos": 1,
+            "numeroCaminatas": 4,
+            "minutosCaminata": 66,
+            "lineaTiempo": [
+                {
+                    "tipo": "caminata-corta",
+                    "inicio": "2025-03-04T00:17:05",
+                    "fin": "2025-03-04T00:17:16",
+                    "minutos": 0,
+                    "kmh": 3.0,
+                    "nivel": "",
+                    "calorias": 0
+                },
+                {
+                    "tipo": "sentado",
+                    "inicio": "2025-03-04T00:17:16",
+                    "fin": "2025-03-04T00:54:44",
+                    "minutos": 37,
+                    "kmh": 0.0,
+                    "nivel": "",
+                    "calorias": 0
+                },
+                {
+                    "tipo": "caminata-corta",
+                    "inicio": "2025-03-04T00:54:44",
+                    "fin": "2025-03-04T00:56:24",
+                    "minutos": 2,
+                    "kmh": 3.3,
+                    "nivel": "",
+                    "calorias": 0
+                },
+                {
+                    "tipo": "sentado",
+                    "inicio": "2025-03-04T00:56:24",
+                    "fin": "2025-03-04T01:25:12",
+                    "minutos": 29,
+                    "kmh": 0.0,
+                    "nivel": "",
+                    "calorias": 0
+                },
+                {
+                    "tipo": "caminata-corta",
+                    "inicio": "2025-03-04T01:25:12",
+                    "fin": "2025-03-04T01:27:01",
+                    "minutos": 2,
+                    "kmh": 3.1,
+                    "nivel": "",
+                    "calorias": 0
+                },
+                {
+                    "tipo": "sentado",
+                    "inicio": "2025-03-04T01:27:01",
+                    "fin": "2025-03-04T02:28:47",
+                    "minutos": 62,
+                    "kmh": 0.0,
+                    "nivel": "",
+                    "calorias": 0
+                },
+                {
+                    "tipo": "caminata",
+                    "inicio": "2025-03-04T02:28:47",
+                    "fin": "2025-03-04T02:35:31",
+                    "minutos": 7,
+                    "kmh": 3.8,
+                    "nivel": "saludable",
+                    "calorias": 16
+                },
+                {
+                    "tipo": "sentado",
+                    "inicio": "2025-03-04T02:35:31",
+                    "fin": "2025-03-04T03:01:48",
+                    "minutos": 26,
+                    "kmh": 0.0,
+                    "nivel": "",
+                    "calorias": 0
+                },
+                {
+                    "tipo": "caminata-corta",
+                    "inicio": "2025-03-04T03:01:48",
+                    "fin": "2025-03-04T03:02:35",
+                    "minutos": 1,
+                    "kmh": 4.1,
+                    "nivel": "",
+                    "calorias": 0
+                },
+                {
+                    "tipo": "caminata-corta",
+                    "inicio": "2025-03-04T13:01:02",
+                    "fin": "2025-03-04T13:01:13",
+                    "minutos": 0,
+                    "kmh": 2.8,
+                    "nivel": "",
+                    "calorias": 0
+                },
+                {
+                    "tipo": "sentado",
+                    "inicio": "2025-03-04T13:01:13",
+                    "fin": "2025-03-04T13:14:48",
+                    "minutos": 14,
+                    "kmh": 0.0,
+                    "nivel": "",
+                    "calorias": 0
+                },
+                {
+                    "tipo": "caminata-corta",
+                    "inicio": "2025-03-04T13:14:48",
+                    "fin": "2025-03-04T13:14:51",
+                    "minutos": 0,
+                    "kmh": 1.9,
+                    "nivel": "",
+                    "calorias": 0
+                },
+                {
+                    "tipo": "sentado",
+                    "inicio": "2025-03-04T13:14:51",
+                    "fin": "2025-03-04T15:13:25",
+                    "minutos": 119,
+                    "kmh": 0.0,
+                    "nivel": "",
+                    "calorias": 0
+                },
+                {
+                    "tipo": "caminata-corta",
+                    "inicio": "2025-03-04T15:13:25",
+                    "fin": "2025-03-04T15:13:29",
+                    "minutos": 0,
+                    "kmh": 3.9,
+                    "nivel": "",
+                    "calorias": 0
+                },
+                {
+                    "tipo": "caminata",
+                    "inicio": "2025-03-04T20:05:04",
+                    "fin": "2025-03-04T20:11:24",
+                    "minutos": 6,
+                    "kmh": 3.1,
+                    "nivel": "recreativo",
+                    "calorias": 6
+                },
+                {
+                    "tipo": "sentado",
+                    "inicio": "2025-03-04T20:11:24",
+                    "fin": "2025-03-04T20:19:36",
+                    "minutos": 8,
+                    "kmh": 0.0,
+                    "nivel": "",
+                    "calorias": 0
+                },
+                {
+                    "tipo": "caminata-corta",
+                    "inicio": "2025-03-04T20:19:36",
+                    "fin": "2025-03-04T20:22:05",
+                    "minutos": 2,
+                    "kmh": 4.1,
+                    "nivel": "",
+                    "calorias": 0
+                },
+                {
+                    "tipo": "sentado",
+                    "inicio": "2025-03-04T20:22:05",
+                    "fin": "2025-03-04T20:39:30",
+                    "minutos": 17,
+                    "kmh": 0.0,
+                    "nivel": "",
+                    "calorias": 0
+                },
+                {
+                    "tipo": "caminata",
+                    "inicio": "2025-03-04T20:39:30",
+                    "fin": "2025-03-04T20:57:12",
+                    "minutos": 18,
+                    "kmh": 3.5,
+                    "nivel": "saludable",
+                    "calorias": 27
+                },
+                {
+                    "tipo": "sentado",
+                    "inicio": "2025-03-04T20:57:12",
+                    "fin": "2025-03-04T22:55:07",
+                    "minutos": 118,
+                    "kmh": 0.0,
+                    "nivel": "",
+                    "calorias": 0
+                },
+                {
+                    "tipo": "caminata",
+                    "inicio": "2025-03-04T22:55:07",
+                    "fin": "2025-03-04T23:30:17",
+                    "minutos": 35,
+                    "kmh": 4.2,
+                    "nivel": "saludable",
+                    "calorias": 110
+                }
+            ]
+        },
+        {
+            "fecha": "2025-03-05",
+            "pasos": 4800,
+            "caloriasActivas": 132,
+            "distanciaKm": 3.2,
+            "pisos": 2,
+            "numeroCaminatas": 5,
+            "minutosCaminata": 36,
+            "lineaTiempo": [
+                {
+                    "tipo": "caminata-corta",
+                    "inicio": "2025-03-05T00:59:36",
+                    "fin": "2025-03-05T01:02:20",
+                    "minutos": 3,
+                    "kmh": 3.6,
+                    "nivel": "",
+                    "calorias": 0
+                },
+                {
+                    "tipo": "sentado",
+                    "inicio": "2025-03-05T01:02:20",
+                    "fin": "2025-03-05T01:21:25",
+                    "minutos": 19,
+                    "kmh": 0.0,
+                    "nivel": "",
+                    "calorias": 0
+                },
+                {
+                    "tipo": "caminata",
+                    "inicio": "2025-03-05T01:21:25",
+                    "fin": "2025-03-05T01:24:35",
+                    "minutos": 3,
+                    "kmh": 3.6,
+                    "nivel": "saludable",
+                    "calorias": 7
+                },
+                {
+                    "tipo": "sentado",
+                    "inicio": "2025-03-05T01:24:35",
+                    "fin": "2025-03-05T01:46:30",
+                    "minutos": 22,
+                    "kmh": 0.0,
+                    "nivel": "",
+                    "calorias": 0
+                },
+                {
+                    "tipo": "caminata-corta",
+                    "inicio": "2025-03-05T01:46:30",
+                    "fin": "2025-03-05T01:47:17",
+                    "minutos": 1,
+                    "kmh": 3.8,
+                    "nivel": "",
+                    "calorias": 0
+                },
+                {
+                    "tipo": "sentado",
+                    "inicio": "2025-03-05T01:47:17",
+                    "fin": "2025-03-05T01:53:26",
+                    "minutos": 6,
+                    "kmh": 0.0,
+                    "nivel": "",
+                    "calorias": 0
+                },
+                {
+                    "tipo": "caminata-corta",
+                    "inicio": "2025-03-05T01:53:26",
+                    "fin": "2025-03-05T01:53:40",
+                    "minutos": 0,
+                    "kmh": 3.3,
+                    "nivel": "",
+                    "calorias": 0
+                },
+                {
+                    "tipo": "sentado",
+                    "inicio": "2025-03-05T01:53:40",
+                    "fin": "2025-03-05T02:33:49",
+                    "minutos": 40,
+                    "kmh": 0.0,
+                    "nivel": "",
+                    "calorias": 0
+                },
+                {
+                    "tipo": "caminata-corta",
+                    "inicio": "2025-03-05T02:33:49",
+                    "fin": "2025-03-05T02:33:59",
+                    "minutos": 0,
+                    "kmh": 4.1,
+                    "nivel": "",
+                    "calorias": 0
+                },
+                {
+                    "tipo": "caminata-corta",
+                    "inicio": "2025-03-05T10:13:54",
+                    "fin": "2025-03-05T10:13:58",
+                    "minutos": 0,
+                    "kmh": 3.1,
+                    "nivel": "",
+                    "calorias": 0
+                },
+                {
+                    "tipo": "sentado",
+                    "inicio": "2025-03-05T10:13:58",
+                    "fin": "2025-03-05T11:32:51",
+                    "minutos": 79,
+                    "kmh": 0.0,
+                    "nivel": "",
+                    "calorias": 0
+                },
+                {
+                    "tipo": "caminata-corta",
+                    "inicio": "2025-03-05T11:32:51",
+                    "fin": "2025-03-05T11:32:57",
+                    "minutos": 0,
+                    "kmh": 3.0,
+                    "nivel": "",
+                    "calorias": 0
+                },
+                {
+                    "tipo": "caminata",
+                    "inicio": "2025-03-05T14:53:40",
+                    "fin": "2025-03-05T14:56:59",
+                    "minutos": 3,
+                    "kmh": 3.1,
+                    "nivel": "recreativo",
+                    "calorias": 3
+                },
+                {
+                    "tipo": "sentado",
+                    "inicio": "2025-03-05T14:56:59",
+                    "fin": "2025-03-05T15:30:05",
+                    "minutos": 33,
+                    "kmh": 0.0,
+                    "nivel": "",
+                    "calorias": 0
+                },
+                {
+                    "tipo": "caminata-corta",
+                    "inicio": "2025-03-05T15:30:05",
+                    "fin": "2025-03-05T15:32:25",
+                    "minutos": 2,
+                    "kmh": 3.3,
+                    "nivel": "",
+                    "calorias": 0
+                },
+                {
+                    "tipo": "caminata",
+                    "inicio": "2025-03-05T20:35:15",
+                    "fin": "2025-03-05T20:49:38",
+                    "minutos": 14,
+                    "kmh": 3.7,
+                    "nivel": "saludable",
+                    "calorias": 33
+                },
+                {
+                    "tipo": "sentado",
+                    "inicio": "2025-03-05T20:49:38",
+                    "fin": "2025-03-05T20:59:03",
+                    "minutos": 9,
+                    "kmh": 0.0,
+                    "nivel": "",
+                    "calorias": 0
+                },
+                {
+                    "tipo": "caminata",
+                    "inicio": "2025-03-05T20:59:03",
+                    "fin": "2025-03-05T21:10:19",
+                    "minutos": 11,
+                    "kmh": 3.7,
+                    "nivel": "saludable",
+                    "calorias": 21
+                },
+                {
+                    "tipo": "sentado",
+                    "inicio": "2025-03-05T21:10:19",
+                    "fin": "2025-03-05T23:34:33",
+                    "minutos": 144,
+                    "kmh": 0.0,
+                    "nivel": "",
+                    "calorias": 0
+                },
+                {
+                    "tipo": "caminata-corta",
+                    "inicio": "2025-03-05T23:34:33",
+                    "fin": "2025-03-05T23:36:19",
+                    "minutos": 2,
+                    "kmh": 3.1,
+                    "nivel": "",
+                    "calorias": 0
+                },
+                {
+                    "tipo": "sentado",
+                    "inicio": "2025-03-05T23:36:19",
+                    "fin": "2025-03-05T23:43:38",
+                    "minutos": 7,
+                    "kmh": 0.0,
+                    "nivel": "",
+                    "calorias": 0
+                },
+                {
+                    "tipo": "caminata",
+                    "inicio": "2025-03-05T23:43:38",
+                    "fin": "2025-03-05T23:48:44",
+                    "minutos": 5,
+                    "kmh": 3.5,
+                    "nivel": "saludable",
+                    "calorias": 3
+                }
+            ]
+        },
+        {
+            "fecha": "2025-03-06",
+            "pasos": 9021,
+            "caloriasActivas": 261,
+            "distanciaKm": 6.3,
+            "pisos": 0,
+            "numeroCaminatas": 4,
+            "minutosCaminata": 76,
+            "lineaTiempo": [
+                {
+                    "tipo": "caminata-corta",
+                    "inicio": "2025-03-06T01:24:46",
+                    "fin": "2025-03-06T01:24:57",
+                    "minutos": 0,
+                    "kmh": 3.4,
+                    "nivel": "",
+                    "calorias": 0
+                },
+                {
+                    "tipo": "sentado",
+                    "inicio": "2025-03-06T01:24:57",
+                    "fin": "2025-03-06T02:33:16",
+                    "minutos": 68,
+                    "kmh": 0.0,
+                    "nivel": "",
+                    "calorias": 0
+                },
+                {
+                    "tipo": "caminata-corta",
+                    "inicio": "2025-03-06T02:33:16",
+                    "fin": "2025-03-06T02:33:19",
+                    "minutos": 0,
+                    "kmh": 2.2,
+                    "nivel": "",
+                    "calorias": 0
+                },
+                {
+                    "tipo": "caminata",
+                    "inicio": "2025-03-06T14:48:42",
+                    "fin": "2025-03-06T14:59:44",
+                    "minutos": 11,
+                    "kmh": 3.1,
+                    "nivel": "recreativo",
+                    "calorias": 11
+                },
+                {
+                    "tipo": "sentado",
+                    "inicio": "2025-03-06T14:59:44",
+                    "fin": "2025-03-06T15:07:18",
+                    "minutos": 8,
+                    "kmh": 0.0,
+                    "nivel": "",
+                    "calorias": 0
+                },
+                {
+                    "tipo": "caminata-corta",
+                    "inicio": "2025-03-06T15:07:18",
+                    "fin": "2025-03-06T15:08:01",
+                    "minutos": 1,
+                    "kmh": 3.0,
+                    "nivel": "",
+                    "calorias": 0
+                },
+                {
+                    "tipo": "sentado",
+                    "inicio": "2025-03-06T15:08:01",
+                    "fin": "2025-03-06T15:39:31",
+                    "minutos": 32,
+                    "kmh": 0.0,
+                    "nivel": "",
+                    "calorias": 0
+                },
+                {
+                    "tipo": "caminata-corta",
+                    "inicio": "2025-03-06T15:39:31",
+                    "fin": "2025-03-06T15:42:02",
+                    "minutos": 3,
+                    "kmh": 3.3,
+                    "nivel": "",
+                    "calorias": 0
+                },
+                {
+                    "tipo": "sentado",
+                    "inicio": "2025-03-06T15:42:02",
+                    "fin": "2025-03-06T15:47:18",
+                    "minutos": 5,
+                    "kmh": 0.0,
+                    "nivel": "",
+                    "calorias": 0
+                },
+                {
+                    "tipo": "caminata",
+                    "inicio": "2025-03-06T15:47:18",
+                    "fin": "2025-03-06T15:51:43",
+                    "minutos": 4,
+                    "kmh": 2.4,
+                    "nivel": "recreativo",
+                    "calorias": 4
+                },
+                {
+                    "tipo": "caminata",
+                    "inicio": "2025-03-06T19:56:55",
+                    "fin": "2025-03-06T20:54:12",
+                    "minutos": 57,
+                    "kmh": 4.0,
+                    "nivel": "saludable",
+                    "calorias": 156
+                },
+                {
+                    "tipo": "sentado",
+                    "inicio": "2025-03-06T20:54:12",
+                    "fin": "2025-03-06T21:00:20",
+                    "minutos": 6,
+                    "kmh": 0.0,
+                    "nivel": "",
+                    "calorias": 0
+                },
+                {
+                    "tipo": "caminata",
+                    "inicio": "2025-03-06T21:00:20",
+                    "fin": "2025-03-06T21:04:32",
+                    "minutos": 4,
+                    "kmh": 3.0,
+                    "nivel": "recreativo",
+                    "calorias": 3
+                },
+                {
+                    "tipo": "sentado",
+                    "inicio": "2025-03-06T21:04:32",
+                    "fin": "2025-03-06T21:14:25",
+                    "minutos": 10,
+                    "kmh": 0.0,
+                    "nivel": "",
+                    "calorias": 0
+                },
+                {
+                    "tipo": "caminata-corta",
+                    "inicio": "2025-03-06T21:14:25",
+                    "fin": "2025-03-06T21:14:44",
+                    "minutos": 0,
+                    "kmh": 3.0,
+                    "nivel": "",
+                    "calorias": 0
+                },
+                {
+                    "tipo": "sentado",
+                    "inicio": "2025-03-06T21:14:44",
+                    "fin": "2025-03-06T23:23:12",
+                    "minutos": 128,
+                    "kmh": 0.0,
+                    "nivel": "",
+                    "calorias": 0
+                },
+                {
+                    "tipo": "caminata-corta",
+                    "inicio": "2025-03-06T23:23:12",
+                    "fin": "2025-03-06T23:24:19",
+                    "minutos": 1,
+                    "kmh": 3.0,
+                    "nivel": "",
+                    "calorias": 0
+                },
+                {
+                    "tipo": "sentado",
+                    "inicio": "2025-03-06T23:24:19",
+                    "fin": "2025-03-06T23:31:36",
+                    "minutos": 7,
+                    "kmh": 0.0,
+                    "nivel": "",
+                    "calorias": 0
+                },
+                {
+                    "tipo": "caminata-corta",
+                    "inicio": "2025-03-06T23:31:36",
+                    "fin": "2025-03-06T23:31:39",
+                    "minutos": 0,
+                    "kmh": 2.8,
+                    "nivel": "",
+                    "calorias": 0
+                }
+            ]
+        },
+        {
+            "fecha": "2025-03-07",
+            "pasos": 3438,
+            "caloriasActivas": 84,
+            "distanciaKm": 2.3,
+            "pisos": 0,
+            "numeroCaminatas": 0,
+            "minutosCaminata": 0,
+            "lineaTiempo": []
+        },
+        {
+            "fecha": "2025-03-08",
+            "pasos": 5041,
+            "caloriasActivas": 118,
+            "distanciaKm": 3.2,
+            "pisos": 0,
+            "numeroCaminatas": 6,
+            "minutosCaminata": 59,
+            "lineaTiempo": [
+                {
+                    "tipo": "caminata-corta",
+                    "inicio": "2025-03-08T00:02:40",
+                    "fin": "2025-03-08T00:02:42",
+                    "minutos": 0,
+                    "kmh": 2.8,
+                    "nivel": "",
+                    "calorias": 0
+                },
+                {
+                    "tipo": "sentado",
+                    "inicio": "2025-03-08T00:02:42",
+                    "fin": "2025-03-08T02:15:04",
+                    "minutos": 132,
+                    "kmh": 0.0,
+                    "nivel": "",
+                    "calorias": 0
+                },
+                {
+                    "tipo": "caminata-corta",
+                    "inicio": "2025-03-08T02:15:04",
+                    "fin": "2025-03-08T02:15:07",
+                    "minutos": 0,
+                    "kmh": 3.3,
+                    "nivel": "",
+                    "calorias": 0
+                },
+                {
+                    "tipo": "caminata",
+                    "inicio": "2025-03-08T10:43:23",
+                    "fin": "2025-03-08T10:59:04",
+                    "minutos": 16,
+                    "kmh": 2.8,
+                    "nivel": "recreativo",
+                    "calorias": 9
+                },
+                {
+                    "tipo": "caminata",
+                    "inicio": "2025-03-08T14:45:38",
+                    "fin": "2025-03-08T15:05:52",
+                    "minutos": 20,
+                    "kmh": 3.2,
+                    "nivel": "recreativo",
+                    "calorias": 33
+                },
+                {
+                    "tipo": "sentado",
+                    "inicio": "2025-03-08T15:05:52",
+                    "fin": "2025-03-08T15:14:33",
+                    "minutos": 9,
+                    "kmh": 0.0,
+                    "nivel": "",
+                    "calorias": 0
+                },
+                {
+                    "tipo": "caminata",
+                    "inicio": "2025-03-08T15:14:33",
+                    "fin": "2025-03-08T15:20:54",
+                    "minutos": 6,
+                    "kmh": 3.2,
+                    "nivel": "recreativo",
+                    "calorias": 4
+                },
+                {
+                    "tipo": "sentado",
+                    "inicio": "2025-03-08T15:20:54",
+                    "fin": "2025-03-08T15:37:20",
+                    "minutos": 16,
+                    "kmh": 0.0,
+                    "nivel": "",
+                    "calorias": 0
+                },
+                {
+                    "tipo": "caminata-corta",
+                    "inicio": "2025-03-08T15:37:20",
+                    "fin": "2025-03-08T15:37:23",
+                    "minutos": 0,
+                    "kmh": 2.5,
+                    "nivel": "",
+                    "calorias": 0
+                },
+                {
+                    "tipo": "sentado",
+                    "inicio": "2025-03-08T15:37:23",
+                    "fin": "2025-03-08T15:43:28",
+                    "minutos": 6,
+                    "kmh": 0.0,
+                    "nivel": "",
+                    "calorias": 0
+                },
+                {
+                    "tipo": "caminata-corta",
+                    "inicio": "2025-03-08T15:43:28",
+                    "fin": "2025-03-08T15:43:34",
+                    "minutos": 0,
+                    "kmh": 2.7,
+                    "nivel": "",
+                    "calorias": 0
+                },
+                {
+                    "tipo": "caminata-corta",
+                    "inicio": "2025-03-08T20:20:12",
+                    "fin": "2025-03-08T20:22:30",
+                    "minutos": 2,
+                    "kmh": 3.2,
+                    "nivel": "",
+                    "calorias": 0
+                },
+                {
+                    "tipo": "sentado",
+                    "inicio": "2025-03-08T20:22:30",
+                    "fin": "2025-03-08T20:51:21",
+                    "minutos": 29,
+                    "kmh": 0.0,
+                    "nivel": "",
+                    "calorias": 0
+                },
+                {
+                    "tipo": "caminata",
+                    "inicio": "2025-03-08T20:51:21",
+                    "fin": "2025-03-08T20:55:10",
+                    "minutos": 4,
+                    "kmh": 3.0,
+                    "nivel": "recreativo",
+                    "calorias": 2
+                },
+                {
+                    "tipo": "sentado",
+                    "inicio": "2025-03-08T20:55:10",
+                    "fin": "2025-03-08T21:21:33",
+                    "minutos": 26,
+                    "kmh": 0.0,
+                    "nivel": "",
+                    "calorias": 0
+                },
+                {
+                    "tipo": "caminata",
+                    "inicio": "2025-03-08T21:21:33",
+                    "fin": "2025-03-08T21:26:41",
+                    "minutos": 5,
+                    "kmh": 3.3,
+                    "nivel": "recreativo",
+                    "calorias": 5
+                },
+                {
+                    "tipo": "sentado",
+                    "inicio": "2025-03-08T21:26:41",
+                    "fin": "2025-03-08T23:16:12",
+                    "minutos": 110,
+                    "kmh": 0.0,
+                    "nivel": "",
+                    "calorias": 0
+                },
+                {
+                    "tipo": "caminata-corta",
+                    "inicio": "2025-03-08T23:16:12",
+                    "fin": "2025-03-08T23:16:16",
+                    "minutos": 0,
+                    "kmh": 3.0,
+                    "nivel": "",
+                    "calorias": 0
+                },
+                {
+                    "tipo": "sentado",
+                    "inicio": "2025-03-08T23:16:16",
+                    "fin": "2025-03-08T23:28:52",
+                    "minutos": 13,
+                    "kmh": 0.0,
+                    "nivel": "",
+                    "calorias": 0
+                },
+                {
+                    "tipo": "caminata-corta",
+                    "inicio": "2025-03-08T23:28:52",
+                    "fin": "2025-03-08T23:28:54",
+                    "minutos": 0,
+                    "kmh": 2.6,
+                    "nivel": "",
+                    "calorias": 0
+                },
+                {
+                    "tipo": "sentado",
+                    "inicio": "2025-03-08T23:28:54",
+                    "fin": "2025-03-08T23:34:59",
+                    "minutos": 6,
+                    "kmh": 0.0,
+                    "nivel": "",
+                    "calorias": 0
+                },
+                {
+                    "tipo": "caminata",
+                    "inicio": "2025-03-08T23:34:59",
+                    "fin": "2025-03-08T23:42:31",
+                    "minutos": 8,
+                    "kmh": 2.9,
+                    "nivel": "recreativo",
+                    "calorias": 3
+                },
+                {
+                    "tipo": "sentado",
+                    "inicio": "2025-03-08T23:42:31",
+                    "fin": "2025-03-08T23:57:50",
+                    "minutos": 15,
+                    "kmh": 0.0,
+                    "nivel": "",
+                    "calorias": 0
+                },
+                {
+                    "tipo": "caminata-corta",
+                    "inicio": "2025-03-08T23:57:50",
+                    "fin": "2025-03-08T23:57:56",
+                    "minutos": 0,
+                    "kmh": 2.6,
+                    "nivel": "",
+                    "calorias": 0
+                }
+            ]
+        },
+        {
+            "fecha": "2025-03-09",
+            "pasos": 5871,
+            "caloriasActivas": 157,
+            "distanciaKm": 3.8,
+            "pisos": 0,
+            "numeroCaminatas": 3,
+            "minutosCaminata": 34,
+            "lineaTiempo": [
+                {
+                    "tipo": "caminata-corta",
+                    "inicio": "2025-03-09T00:02:58",
+                    "fin": "2025-03-09T00:03:02",
+                    "minutos": 0,
+                    "kmh": 3.3,
+                    "nivel": "",
+                    "calorias": 0
+                },
+                {
+                    "tipo": "caminata-corta",
+                    "inicio": "2025-03-09T10:33:02",
+                    "fin": "2025-03-09T10:33:07",
+                    "minutos": 0,
+                    "kmh": 2.6,
+                    "nivel": "",
+                    "calorias": 0
+                },
+                {
+                    "tipo": "sentado",
+                    "inicio": "2025-03-09T10:33:07",
+                    "fin": "2025-03-09T10:40:25",
+                    "minutos": 7,
+                    "kmh": 0.0,
+                    "nivel": "",
+                    "calorias": 0
+                },
+                {
+                    "tipo": "caminata-corta",
+                    "inicio": "2025-03-09T10:40:25",
+                    "fin": "2025-03-09T10:42:31",
+                    "minutos": 2,
+                    "kmh": 2.4,
+                    "nivel": "",
+                    "calorias": 0
+                },
+                {
+                    "tipo": "caminata",
+                    "inicio": "2025-03-09T14:53:44",
+                    "fin": "2025-03-09T14:58:04",
+                    "minutos": 4,
+                    "kmh": 2.6,
+                    "nivel": "recreativo",
+                    "calorias": 3
+                },
+                {
+                    "tipo": "sentado",
+                    "inicio": "2025-03-09T14:58:04",
+                    "fin": "2025-03-09T15:15:02",
+                    "minutos": 17,
+                    "kmh": 0.0,
+                    "nivel": "",
+                    "calorias": 0
+                },
+                {
+                    "tipo": "caminata-corta",
+                    "inicio": "2025-03-09T15:15:02",
+                    "fin": "2025-03-09T15:15:06",
+                    "minutos": 0,
+                    "kmh": 3.6,
+                    "nivel": "",
+                    "calorias": 0
+                },
+                {
+                    "tipo": "caminata",
+                    "inicio": "2025-03-09T18:55:28",
+                    "fin": "2025-03-09T19:21:37",
+                    "minutos": 26,
+                    "kmh": 3.9,
+                    "nivel": "saludable",
+                    "calorias": 55
+                },
+                {
+                    "tipo": "sentado",
+                    "inicio": "2025-03-09T19:21:37",
+                    "fin": "2025-03-09T19:44:39",
+                    "minutos": 23,
+                    "kmh": 0.0,
+                    "nivel": "",
+                    "calorias": 0
+                },
+                {
+                    "tipo": "caminata-corta",
+                    "inicio": "2025-03-09T19:44:39",
+                    "fin": "2025-03-09T19:45:19",
+                    "minutos": 1,
+                    "kmh": 3.8,
+                    "nivel": "",
+                    "calorias": 0
+                },
+                {
+                    "tipo": "sentado",
+                    "inicio": "2025-03-09T19:45:19",
+                    "fin": "2025-03-09T19:51:38",
+                    "minutos": 6,
+                    "kmh": 0.0,
+                    "nivel": "",
+                    "calorias": 0
+                },
+                {
+                    "tipo": "caminata",
+                    "inicio": "2025-03-09T19:51:38",
+                    "fin": "2025-03-09T19:55:40",
+                    "minutos": 4,
+                    "kmh": 2.6,
+                    "nivel": "recreativo",
+                    "calorias": 8
+                },
+                {
+                    "tipo": "caminata-corta",
+                    "inicio": "2025-03-09T23:20:17",
+                    "fin": "2025-03-09T23:22:32",
+                    "minutos": 2,
+                    "kmh": 2.8,
+                    "nivel": "",
+                    "calorias": 0
+                },
+                {
+                    "tipo": "sentado",
+                    "inicio": "2025-03-09T23:22:32",
+                    "fin": "2025-03-09T23:41:31",
+                    "minutos": 19,
+                    "kmh": 0.0,
+                    "nivel": "",
+                    "calorias": 0
+                },
+                {
+                    "tipo": "caminata-corta",
+                    "inicio": "2025-03-09T23:41:31",
+                    "fin": "2025-03-09T23:41:36",
+                    "minutos": 0,
+                    "kmh": 3.4,
+                    "nivel": "",
+                    "calorias": 0
+                }
+            ]
+        },
+        {
+            "fecha": "2025-03-10",
+            "pasos": 30,
+            "caloriasActivas": 0,
+            "distanciaKm": 0.0,
+            "pisos": 0,
+            "numeroCaminatas": 0,
+            "minutosCaminata": 0,
+            "lineaTiempo": []
+        }
+    ]
+}
