@@ -20,6 +20,7 @@ const SCRIPTS_DE_LA_APP = [
     "js/formato.js",
     "js/lector-csv.js",
     "js/procesador-salud.js",
+    "js/lector-archivos.js",
 ];
 for (const script of SCRIPTS_DE_LA_APP) {
     const rutaScript = path.join(RAIZ, script);
@@ -48,6 +49,19 @@ function comprobarIgual(descripcion, obtenido, esperado) {
         informarPrueba(descripcion, []);
     } else {
         informarPrueba(descripcion, ["esperado " + textoEsperado + ", obtenido " + textoObtenido]);
+    }
+}
+
+async function comprobarErrorAsincrono(descripcion, funcionAsincrona, textoEsperado) {
+    try {
+        await funcionAsincrona();
+        informarPrueba(descripcion, ["esperaba un error y no hubo ninguno"]);
+    } catch (error) {
+        if (error.message.includes(textoEsperado)) {
+            informarPrueba(descripcion, []);
+        } else {
+            informarPrueba(descripcion, ["mensaje inesperado: " + error.message]);
+        }
     }
 }
 
@@ -252,9 +266,65 @@ comprobarIgual(
 );
 
 // ---------------------------------------------------------------------------
+// Lector de archivos (el .zip se prueba a mano en el navegador: fflate viene de un CDN)
+// ---------------------------------------------------------------------------
 
-const total = resultado.pasaron + resultado.fallaron;
-console.log("\nResultado: " + resultado.pasaron + " de " + total + " pruebas pasaron\n");
-if (resultado.fallaron > 0) {
-    process.exit(1);
+async function probarLectorArchivos() {
+    console.log("\nLector de archivos\n");
+
+    comprobarIgual(
+        "reconoce los CSV que usa la app",
+        [
+            "HKQuantityTypeIdentifierStepCount_2026-09-269_10-37-41_SimpleHealthExportCSV.csv",
+            "HKQuantityTypeIdentifierWalkingSpeed_2026-09-269_10-37-42_SimpleHealthExportCSV.csv",
+            "HKQuantityTypeIdentifierWalkingStepLength_2026-09-269_10-37-42_SimpleHealthExportCSV.csv",
+            "HKQuantityTypeIdentifierBodyMass_2026-09-269_10-37-41_SimpleHealthExportCSV.csv",
+            "._HKQuantityTypeIdentifierStepCount_2026-09-269_10-37-41_SimpleHealthExportCSV.csv",
+            "HKQuantityTypeIdentifierStepCount_notas.txt",
+        ].map(esArchivoNecesario),
+        [true, true, false, false, false, false]
+    );
+    comprobarIgual("quita la carpeta de una ruta del zip", obtenerNombreBase("export/archivo.csv"), "archivo.csv");
+
+    const archivosElegidos = leerArchivosDePrueba().map(function (archivo) {
+        return new File([archivo.texto], archivo.nombre);
+    });
+    archivosElegidos.push(new File(["no es del export"], "notas.txt"));
+    archivosElegidos.push(new File(["peso"], "HKQuantityTypeIdentifierBodyMass_prueba.csv"));
+    const archivosLeidos = await leerArchivosSeleccionados(archivosElegidos);
+    comprobarIgual(
+        "lee los CSV elegidos e ignora los demás",
+        archivosLeidos.map(function (archivo) { return archivo.nombre; }),
+        leerArchivosDePrueba().map(function (archivo) { return archivo.nombre; })
+    );
+    comprobarIgual(
+        "los CSV leídos dan el mismo resultado que la referencia",
+        procesarArchivos(archivosLeidos).dias.map(function (dia) { return dia.pasos; }),
+        REFERENCIA.dias.map(function (dia) { return dia.pasos; })
+    );
+
+    await comprobarErrorAsincrono(
+        "sin archivos del export avisa qué elegir",
+        function () {
+            return leerArchivosSeleccionados([new File(["hola"], "foto.jpg")]);
+        },
+        "No encontré archivos del export"
+    );
+    await comprobarErrorAsincrono(
+        "un .zip sin el lector cargado avisa de la conexión",
+        function () {
+            return leerArchivosSeleccionados([new File(["zip"], "export.zip")]);
+        },
+        "Revisa tu conexión a internet"
+    );
 }
+
+function mostrarResultado() {
+    const total = resultado.pasaron + resultado.fallaron;
+    console.log("\nResultado: " + resultado.pasaron + " de " + total + " pruebas pasaron\n");
+    if (resultado.fallaron > 0) {
+        process.exit(1);
+    }
+}
+
+probarLectorArchivos().then(mostrarResultado);

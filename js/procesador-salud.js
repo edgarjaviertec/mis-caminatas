@@ -94,13 +94,16 @@ function procesarArchivos(archivos) {
     return { dias: dias, advertencias: advertencias };
 }
 
-// Los archivos se llaman "HKQuantityTypeIdentifierStepCount_<fecha>_SimpleHealthExportCSV.csv".
-// El "_" final evita confundir métricas de nombre parecido.
 function buscarArchivo(archivos, metrica) {
-    const prefijo = "HKQuantityTypeIdentifier" + metrica + "_";
     return archivos.find(function (archivo) {
-        return archivo.nombre.startsWith(prefijo) && archivo.nombre.endsWith(".csv");
+        return esArchivoDeMetrica(archivo.nombre, metrica);
     });
+}
+
+// Los archivos se llaman "HKQuantityTypeIdentifierStepCount_<fecha>_SimpleHealthExportCSV.csv".
+// El "_" final evita confundir métricas de nombre parecido (WalkingStep / WalkingStepLength).
+function esArchivoDeMetrica(nombre, metrica) {
+    return nombre.startsWith("HKQuantityTypeIdentifier" + metrica + "_") && nombre.endsWith(".csv");
 }
 
 // Devuelve [{ inicio, fin, valor, tieneFin }] con fechas y números ya convertidos.
